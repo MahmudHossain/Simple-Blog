@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}
+Please Register for a new account
+{% endblock %}
+{% block stylesheet %}
+
+{% endblock %}
+{% block profile %}
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid" style="background-color:MediumSeaGreen;">
+
+    <form action="" method="POST" >
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-primary">Sign Up</button>
+    </form>
+</div>
+{% endblock %}
+{% block script %}
+{% endblock %}
